@@ -1,8 +1,8 @@
 {
-    "manufacturer": "Mecha",
-    "keyboard_name": "cmtkey",
+    "manufacturer": "Mecha Systems",
+    "keyboard_name": "Comet Keyboard Extension",
     "maintainer": "anirudha-dg",
-    "bootloader": "stm32-dfu",
+    "bootloader": "custom",
     "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
@@ -12,7 +12,7 @@
     },
     "matrix_pins": {
         "cols": ["A0", "A1", "A2", "A3"],
-        "rows": ["A4", "A5", "A6", "A7"]
+        "rows": ["A12", "A13", "A14", "A15"]
     },
     "processor": "STM32G431",
     "url": "",
