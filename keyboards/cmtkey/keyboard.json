@@ -17,7 +17,7 @@
     "processor": "STM32G431",
     "url": "",
     "usb": {
-        "device_version": "1.0.0",
+        "device_version": "0.1.0",
         "pid": "0x0000",
         "vid": "0xFEED"
     },
