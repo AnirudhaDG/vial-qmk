@@ -1,8 +1,13 @@
 #pragma once
 
-// #define LED_NUM_LOCK_PIN A8
+#define LED_CAPS_LOCK_PIN A8
 
 // #define AZOTEQ_IQS5XX_TPS65
+
+#define MATRIX_ROWS 4
+#define MATRIX_COLS 11
+
+
 #define AZOTEQ_IQS5XX_WIDTH_MM 33
 #define AZOTEQ_IQS5XX_HEIGHT_MM 16.4
 #define AZOTEQ_IQS5XX_RESOLUTION_X 9
@@ -13,13 +18,16 @@
 
 #define AZOTEQ_IQS5XX_ADDRESS 0x56
 
-#define WS2812_DI_PIN A8
-#define WS2812_LED_COUNT 16
 
-// #define RGB_MATRIX_ENABLE
-// #define RGB_MATRIX_SOLID_COLOR 2
-// #define WS2812_TIMING 600
-// #define WS2812_T1H 800
-// #define WS2812_T0H 400
+// WS2812 RGB LED configuration
+// #define WS2812_DI_PIN B11
+// #define WS2812_TIMING 2000
+// #define WS2812_T1H 900
+// #define WS2812_T0H 280
+// #define WS2812_T1L 1720
+// #define WS2812_T0L 1100
+// #define WS2812_TRST_US 80
+// #define RGBLIGHT_LED_COUNT 10
+// #define RGBLIGHT_DEFAULT_HUE 0
 
-
+// #define WS2812_BITBANG_NOP_FUDGE 1
