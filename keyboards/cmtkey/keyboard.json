@@ -1,7 +1,7 @@
 {
     "manufacturer": "Mecha Systems",
     "keyboard_name": "Comet Keyboard Extension",
-    "maintainer": "anirudha-dg",
+    "maintainer": "AnirudhaDG",
     "bootloader": "stm32-dfu",
     "diode_direction": "COL2ROW",
     "features": {
@@ -22,7 +22,7 @@
         "vid": "0xFEED"
     },
     "layouts": {
-        "LAYOUT_final_4x11": {
+        "LAYOUT": {
             "layout": [
                 {"matrix": [0, 0], "x": 0, "y": 0},
                 {"matrix": [0, 1], "x": 1, "y": 0},
@@ -69,7 +69,8 @@
                 {"matrix": [3, 6], "x": 6, "y": 3},
                 {"matrix": [3, 7], "x": 7, "y": 3},
                 {"matrix": [3, 8], "x": 8, "y": 3},
-                {"matrix": [3, 9], "x": 9, "y": 3}
+                {"matrix": [3, 9], "x": 9, "y": 3},
+                {"matrix": [3, 10], "x": 10, "y": 3}
             ]
         }
 
