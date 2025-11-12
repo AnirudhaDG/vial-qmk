@@ -8,13 +8,13 @@
 #include "i2c_master.h"
 #include "pointing_device.h"
 #include "util.h"
+// #include "IQS9150_init.h"
 
-#define POINTING_DEVICE_DEBUG
 
 // Product numbers
 typedef enum {
     AZOTEQ_IQS9150_UNKNOWN,
-    AZOTEQ_IQS9150 = 0x1000,
+    AZOTEQ_IQS9150 = 0x0000,
     AZOTEQ_IQS9151 = 0x1001,
 } azoteq_iqs9150_product_numbers_t;
 
@@ -123,12 +123,12 @@ typedef struct PACKED {
 #define AZOTEQ_IQS9150_SWAP_H_L_BYTES(b) ((uint16_t)(((b) & 0xff) << 8) | ((b) >> 8))
 
 // Default configurations
-#ifndef AZOTEQ_IQS9150_ADDRESS
+#ifndef AZOTEQ_IQS9150_ADDRESS 
 #    define AZOTEQ_IQS9150_ADDRESS (0x56 << 1)
 #endif
 
 #ifndef AZOTEQ_IQS9150_TIMEOUT_MS
-#    define AZOTEQ_IQS9150_TIMEOUT_MS 10
+#    define AZOTEQ_IQS9150_TIMEOUT_MS 100
 #endif
 
 #ifndef AZOTEQ_IQS9150_REPORT_RATE

@@ -25,7 +25,6 @@
  * but using any other I2C pins should be trivial.
  */
 
-#ifdef RGB_MATRIX_ENABLE
 
 #include "i2c_master.h"
 #include "gpio.h"
@@ -147,5 +146,3 @@ void i2c_stop(uint8_t index) {
         i2cStop(drivers[index]);
     }
 }
-
-#endif

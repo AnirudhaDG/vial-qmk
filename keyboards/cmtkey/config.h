@@ -19,6 +19,9 @@
 #define WS2812_TRST_US 80
 #define WS2812_BITBANG_NOP_FUDGE 0.4
 
+// #define POINTING_DEVICE_DEBUG
+// #define CONSOLE_ENABLE
+
 #define RGBLIGHT_LED_COUNT 10
 
 #define RGBLIGHT_LED_MAP { \
@@ -26,6 +29,8 @@
     2, 3, 4, 5,           /* Between row 1-2: 4 LEDs */ \
     6, 7, 8, 9            /* Between row 3-4: 4 LEDs */ \
 }
+
+// #define RGB_MATRIX_ENABLE
 
 #define RGBLIGHT_EFFECT_BREATHING
 #define RGBLIGHT_EFFECT_RAINBOW_MOOD
@@ -37,14 +42,26 @@
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
 
-
-// #define AZOTEQ_IQS5XX_WIDTH_MM 33
-// #define AZOTEQ_IQS5XX_HEIGHT_MM 16.4
-// #define AZOTEQ_IQS5XX_RESOLUTION_X 9
-// #define AZOTEQ_IQS5XX_RESOLUTION_Y 4
+// #define POINTING_DEVICE_DRIVER_azoteq_iqs9150
 #define I2C_DRIVER I2CD1
 #define I2C1_SDA_PIN B7
 #define I2C1_SCL_PIN A15
+#define I2C1_TIMINGR_PRESC 0U
+#define I2C1_TIMINGR_SCLDEL 3U
+#define I2C1_TIMINGR_SDADEL 1U
+#define I2C1_TIMINGR_SCLH 3U
+#define I2C1_TIMINGR_SCLL 9U
+#define AZOTEQ_IQS9150_ADDRESS (0x56 << 1)  // I2C address (7-bit address shifted)
+#define AZOTEQ_IQS9150_TIMEOUT_MS 100
+
+#define I2C1_CLOCK_SPEED 400000
+
+#define AZOTEQ_IQS9150_USE_DEFAULT_SETTINGS
+
+#define IQS9150_INIT_H
+
+
+
 // #define AZOTEQ_IQS5XX_ADDRESS 0x56
 
 // #define AZOTEQ_IQS5XX_TPS65

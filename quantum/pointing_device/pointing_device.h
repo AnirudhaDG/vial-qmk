@@ -53,6 +53,7 @@ typedef struct {
 #elif defined(POINTING_DEVICE_DRIVER_azoteq_iqs9150)
 #    include "i2c_master.h"
 #    include "drivers/sensors/azoteq_iqs9150.h"
+#    include "drivers/sensors/IQS9150_init.h"
 #elif defined(POINTING_DEVICE_DRIVER_cirque_pinnacle_i2c) || defined(POINTING_DEVICE_DRIVER_cirque_pinnacle_spi)
 #    include "drivers/sensors/cirque_pinnacle.h"
 #    include "pointing_device_gestures.h"
