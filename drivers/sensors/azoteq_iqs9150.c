@@ -462,8 +462,7 @@ void azoteq_iqs9150_init(void) {
     tester();
     
 
-    // wait_ms(3000);
-    
+    // wait_ms(3000);    
     if (azoteq_iqs9150_get_product() != AZOTEQ_IQS9150_UNKNOWN) {
         uprintf("IQS9150: Device detected, product: 0x%04X\n", azoteq_iqs9150_product_number);
         
